@@ -1,9 +1,15 @@
-import './app.css';
+import HomePage from './pages/HomePage';
+import TaskPage from './pages/TaskPage';
+
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <h1 className="test">Hey</h1>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/todos/:id" element={<TaskPage />} />
+      </Routes>
     </div>
   )
 }
