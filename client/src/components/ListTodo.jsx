@@ -35,7 +35,7 @@ function ListTodo({ todos, setTodos }) {
         <div className="todoCon">
             <div className='todoBG'>
                 {todos.map(todo => (
-                    <div className="todoDiv" key={todo.todo_id} onClick={()=> {window.location.href = `/todos/${todo.todo_id}`}}>
+                    <div className="todoDiv" key={todo.todo_id} >
                         <h1 className="item">{todo.description}</h1>
                         <Trash onClick={() => deleteTodo(todo.todo_id)} color='red' size={34} className='trash' />
                     </div>
