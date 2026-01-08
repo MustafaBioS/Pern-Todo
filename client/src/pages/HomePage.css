@@ -57,5 +57,25 @@
     margin-bottom: 20px;
     border-radius: 20px;
     text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
 }
 
+.todoDiv:hover {
+    transform: translateY(-6px);
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.trash {
+    transition: all 0.3s ease;
+}
+
+.trash:hover {
+    opacity: 0.7;
+    transform: translateY(-5px);
+}

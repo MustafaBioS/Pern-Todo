@@ -1,11 +1,15 @@
 import "./HomePage.css";
 import InputTodo from "../components/InputTodo";
 import ListTodo from "../components/ListTodo";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function HomePage() {
 
   const [todos, setTodos] = useState([]);
+
+  useEffect(()=> {
+    document.title = "To Do List - Home"
+  }, []);
 
   return (
     <div>

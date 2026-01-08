@@ -1,9 +1,10 @@
 import HomePage from './pages/HomePage';
 import TaskPage from './pages/TaskPage';
-
+import {useEffect} from "react";
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
+
   return (
     <div>
       <Routes>
